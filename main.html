@@ -3,10 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>U1</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>UrTime | Project</title>
+    <link rel="icon" type="image/png" href="./assets/clock.png">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
+  <!-- NavBar -->
+  <header class="px-[15%] py-6 border-b-2 border-gray-800 text-white">
+    <nav class="flex justify-between items-center">
+
+    <section>
+      <figure class="font-black text-4xl text-violet-400">
+        <a href="./main.html">UrTime</a>
+      </figure>
+    </section>
+
+    <section class="flex items-center gap-4">
+      <a href="/pages/Home.html" class="text-white hover:underline hover:decoration-yellow-500 hover:rounded hover:decoration-2 hover:underline-offset-4">
+        Get Started
+      </a>
+      <a href="/pages/About.html" class="text-white hover:underline hover:decoration-yellow-500 hover:rounded hover:decoration-2 hover:underline-offset-4">
+        About
+      </a>
+    </section>
+
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main class="flex items-center justify-center min-h-screen text-white mr-10">
+
+    <div class="flex items-center justify-between gap-16 max-w-6xl w-full">
+      <section class="text-left flex-1">
+        <p class="text-8xl font-black mb-2 transtion-transform duration-400 ease-in-out cursor-pointer hover:text-yellow-400">
+          UrTime
+        </p>
+          <section class="flex gap-3">
+            <p class="text-4xl font-semibold mb-2 transtion duration-200 ease-in-out hover:text-violet-400">
+              Focus.
+            </p>
+            <p class="text-4xl font-semibold mb-2 transtion duration-200 ease-in-out hover:text-yellow-400">
+              Plan.
+            </p>
+            <p class="text-4xl font-semibold mb-2 transtion duration-200 ease-in-out hover:text-violet-400">
+              Achieve.
+            </p>
+          </section>
+        <p class="text-md mb-6 text-gray-300">
+          A Free Pomodoro Timer and To-Do List To Boost Your Productivity.
+        </p>
+        <a href="/pages/Home.html" class="transtion duration-500 ease-in-out p-2 bg-violet-400 rounded-md text-lg hover:bg-yellow-500">
+          Get Started
+      </a>
+      </section>
+
+      <main class="relative flex-1">
+
+      <figure class="flex-1 flex justify-end">
+        <img src="./assets/sticky.webp" alt="orasan" class="w-[600px] max-w-full relative z-10">
+      </figure>
+      
+      <figure class="flex-1 flex justify-end">
+        <img src="./assets/clock.png" alt="orasan" class="w-[600px] max-w-full absolute top-10 left-60 z-20 rounded-lg">
+      </figure>
+
+      </main>
+
+    </div>
+  </main>
+
+   <!-- Footer -->
+  <footer class="bg-gray-900 border-t-2 border-gray-800 mt-20">
+    <section class="flex items-start justify-between ap-8 max-w-6xl mx-auto px-6 py-10 ">
+
+      <div class="flex flex-col gap-2">
+        <p class="text-3xl font-black text-violet-400 transtion-transform duration-400 ease-in-out cursor-pointer hover:text-yellow-400">
+          UrTime
+        </p>
+        <p class="text-gray-400 max-w-xl">
+        Pomodoro Timer || To-Do List.
+      </p>
+      </div>
+
+      <div class="flex gap-10">
+        <img src="./assets/facebook.png" alt="fb" class="w-10 transtion-transform duration-400 ease-in-out hover:scale-[1.05] cursor-pointer">
+        <img src="./assets/gmail.png" alt="email" class="w-10 transtion-transform duration-400 ease-in-out hover:scale-[1.05] cursor-pointer">
+        <img src="./assets/github.png" alt="x"   class="w-10 transtion-transform duration-400 ease-in-out hover:scale-[1.05] cursor-pointer">
+      </div>
+    </section>
+
+    <div class="text-center text-gray-500 text-sm mt-6 pb-4">
+      &copy; 2025 UrTime. All Rights Reserved.
+    </div>
+
+  </footer>
+
   <script src="app.js"></script>
 </body>
 </html>
