@@ -3,9 +3,89 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../assets/clock.png">
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>UrTime | Home</title>
   </head>
   <body>
-    
+    <header class="px-[15%] py-6 border-b-2 border-gray-800 text-white">
+      <nav class="flex justify-between items-center">
+      <section>
+        <figure class="font-black text-4xl text-violet-400">
+          <a href="../main.html">UrTime</a>
+        </figure>
+      </section>
+      </nav>
+    </header>
+
+    <!-- pomodoro -->
+    <main class="flex items-start justify-start min-h-screen text-white px-[15%] py-[5%] gap-35">
+
+      <div class="flex flex-col gap-10 border border-gray-700 rounded-xl p-15 shadow-[0_0_10px_2px_rgba(255,255,255,0.1)]">
+        <main class="flex items-center justify-center min-h-[40vh] min-w-[40vh] ring-5 ring-violet-600 ring-opacity-70 rounded-full 
+      transition-all duration-300 ease-in-out shadow-[0_0_15px_5px_rgba(0,0,0,0.1)] shadow-violet-700/80 hover:ring-violet-800">
+        <div class="flex space-x-1">
+          <p class="text-7xl font-bold">25</p>
+          <p class="text-7xl font-bold">:</p>
+          <p class="text-7xl font-bold">00</p>
+        </div>
+      </main>
+
+    <section class="flex justify-center gap-10 p-6 w-100">
+      <div class="flex justify-between items-center w-full max-w-4xl">
+        <button class="text-black bg-violet-500 px-4 py-5 rounded-full text-md transition hover:bg-violet-500/70 hover:shadow-md cursor-pointer">
+          Start
+        </button>
+
+        <button class="bg-violet-500 p-5 rounded-full transition hover:bg-violet-500/70 hover:shadow-md cursor-pointer">
+          <img src="../assets/play-button.png" alt="Play" class="w-6 h-6">
+        </button>
+
+        <button class="bg-violet-500 p-5 rounded-full transition hover:bg-violet-500/70 hover:shadow-md cursor-pointer">
+          <img src="../assets/restart.png" alt="Restart" class="w-6 h-6">
+        </button>
+      </div>
+    </section>
+      </div>
+
+
+
+    <!-- to-do-list -->
+    <div class="flex flex-col gap-10 border border-gray-700 rounded-xl p-4 shadow-[0_0_10px_2px_rgba(255,255,255,0.1)]">
+
+      <main class="flex justify-center min-h-[66vh] min-w-[70vh] text-white px-[15%] py-[5%] gap-35">
+          <h1 class="text-2xl font-bold">TASK</h1>
+      </main>
+
+    </div>
+
+    </main>
+  <!-- Footer -->
+  <footer class="bg-gray-900 border-t-2 border-gray-800 mt-20">
+    <section class="flex items-start justify-between ap-8 max-w-6xl mx-auto px-6 py-10 ">
+
+      <div class="flex flex-col gap-2">
+        <p class="text-3xl font-black text-violet-400 transtion-transform duration-400 ease-in-out cursor-pointer hover:text-yellow-400">
+          UrTime
+        </p>
+        <p class="text-gray-400 max-w-xl">
+        Pomodoro Timer || To-Do List.
+      </p>
+      </div>
+
+      <div class="flex gap-10">
+        <img src="../assets/facebook.png" alt="fb" class="w-10 transtion-transform duration-400 ease-in-out hover:scale-[1.05] cursor-pointer">
+        <img src="../assets/gmail.png" alt="email" class="w-10 transtion-transform duration-400 ease-in-out hover:scale-[1.05] cursor-pointer">
+        <img src="../assets/github.png" alt="x"   class="w-10 transtion-transform duration-400 ease-in-out hover:scale-[1.05] cursor-pointer">
+      </div>
+    </section>
+
+    <div class="text-center text-gray-500 text-sm mt-6 pb-4">
+      &copy; 2025 UrTime. All Rights Reserved.
+    </div>
+
+  </footer>
+    <script src="app.js"></script>
   </body>
 </html>
