@@ -1,11 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UrTime | About</title>
-  </head>
-  <body>
-    <script src="../index.js"></script>
-  </body>
+    <link rel="icon" type="image/png" href="./assets/clock.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <!-- NavBar -->
+  <header class="px-[15%] py-6 border-b-2 border-gray-800 text-white">
+    <nav class="flex justify-between items-center">
+
+    <section>
+      <figure class="font-black text-4xl text-violet-400">
+        <a href="index.html">UrTime</a>
+      </figure>
+    </section>
+
+    <section class="flex items-center gap-4">
+      <a href="Home.html" class="text-white hover:underline hover:decoration-yellow-500 hover:rounded hover:decoration-2 hover:underline-offset-4">
+        Get Started
+      </a>
+      <a href="About.html" class="text-white hover:underline hover:decoration-yellow-500 hover:rounded hover:decoration-2 hover:underline-offset-4">
+        About
+      </a>
+    </section>
+
+    </nav>
+  </header>
+
+   <!--About Section-->
+  <main class="flex flex-col justify-center items-center max-w-6xl mx-auto px-6 py-16 text-gray-200 min-h-screen">
+  <section class="text-center mb-16">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-purple-400 mb-4">About UrTime</h1>
+  </section>
+
+  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-20 cursor-pointer">
+    <div class="bg-[#1a1f32] rounded-xl p-8 shadow-lg hover:shadow-purple-500/50 transition-shadow duration-300 text-center">
+      <img src="./assets/clock3.png" alt="" width="200" class="mx-auto">
+      <h3 class="text-xl font-semibold mb-2 text-white">UrTime To Focus</h3>
+      <p class="text-gray-400 text-sm leading-relaxed">
+        Focusing on one task at a time allows you to focus better and concentrate on tasks without distractions.
+      </p>
+    </div>
+
+    <div class="bg-[#1a1f32] rounded-xl p-8 shadow-lg hover:shadow-purple-500/50 transition-shadow duration-300 text-center">
+      <img src="./assets/sticky3.png" alt="" width="200" class="mx-auto">
+      <h3 class="text-xl font-semibold mb-2 text-white">UrTime To Plan</h3>
+      <p class="text-gray-400 text-sm leading-relaxed">
+        Provide a clear roadmap to your goals by decluttering your workload and organizing all task to give you more control over your workload.
+      </p>
+    </div>
+
+    <div class="bg-[#1a1f32] rounded-xl p-8 shadow-lg hover:shadow-purple-500/50 transition-shadow duration-300 text-center">
+      <img src="./assets/trophy1.png" alt="" width="200" class="mx-auto">
+      <h3 class="text-xl font-semibold mb-2 text-white">UrTime to Achieve</h3>
+      <p class="text-gray-400 text-sm leading-relaxed">
+        Turn tiny habits into big wins, inspired by Atomic Habits.
+      </p>
+    </div>
+
+  </section>
+
+  <section class="text-center">
+    <button class="bg-purple-500 hover:bg-yellow-500 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition-colors duration-300 cursor-pointer "
+      onclick="window.location.href=('index.html')">
+      It's Time
+    </button>
+  </section>
+  </main>
+
+   <!-- Footer -->
+  <footer class="bg-gray-900 border-t-2 border-gray-800 mt-20">
+    <section class="flex items-start justify-between ap-8 max-w-6xl mx-auto px-6 py-10 ">
+
+      <div class="flex flex-col gap-2">
+        <p class="text-3xl font-black text-violet-400 transtion-transform duration-400 ease-in-out cursor-pointer hover:text-yellow-400">
+          UrTime
+        </p>
+        <p class="text-gray-400 max-w-xl">
+        Pomodoro Timer || To-Do List.
+      </p>
+      </div>
+
+      <div class="flex gap-10">
+        <img src="./assets/facebook.png" alt="fb" class="w-10 transtion-transform duration-400 ease-in-out hover:scale-[1.05] cursor-pointer">
+        <img src="./assets/gmail.png" alt="email" class="w-10 transtion-transform duration-400 ease-in-out hover:scale-[1.05] cursor-pointer">
+        <img src="./assets/github.png" alt="x"   class="w-10 transtion-transform duration-400 ease-in-out hover:scale-[1.05] cursor-pointer">
+      </div>
+    </section>
+
+    <div class="text-center text-gray-500 text-sm mt-6 pb-4">
+      &copy; 2025 UrTime. All rights reserved. Developed by U1.
+    </div>
+
+  </footer>
+
+</body>
 </html>
