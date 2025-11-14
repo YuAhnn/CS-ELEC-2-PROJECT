@@ -23,33 +23,34 @@
     <main class="flex items-start justify-start min-h-screen text-white px-[15%] py-[5%] gap-35">
 
       <div class="flex flex-col gap-10 border border-gray-700 rounded-xl p-15 shadow-[0_0_10px_2px_rgba(255,255,255,0.1)]">
-        <main class="flex items-center justify-center min-h-[40vh] min-w-[40vh] ring-5 ring-violet-600 ring-opacity-70 rounded-full 
-      transition-all duration-300 ease-in-out shadow-[0_0_15px_5px_rgba(0,0,0,0.1)] shadow-violet-700/80 hover:ring-violet-800">
-        <div class="flex space-x-1">
-          <p class="text-7xl font-bold">25</p>
-          <p class="text-7xl font-bold">:</p>
-          <p class="text-7xl font-bold">00</p>
+        <div id="Ring" class="flex items-center justify-center min-h-[40vh] min-w-[40vh] ring-5 ring-violet-600 ring-opacity-70 rounded-full 
+                    transition-all duration-300 ease-in-out shadow-[0_0_15px_5px_rgba(0,0,0,0.1)] shadow-violet-700/80 hover:ring-violet-800">
+                    <div class="flex space-x-1">
+                      <p class="text-7xl font-bold">25</p>
+                      <p class="text-7xl font-bold">:</p>
+                      <p class="text-7xl font-bold">00</p>
+                    </div>
         </div>
-      </main>
 
-    <section class="flex justify-center gap-10 p-6 w-100">
-      <div class="flex justify-between items-center w-full max-w-4xl">
-        <button class="text-black bg-violet-500 px-4 py-5 rounded-full text-md transition hover:bg-violet-500/70 hover:shadow-md cursor-pointer">
-          Start
-        </button>
+      <section class="flex justify-center gap-10 p-6 w-100">
+        <div class="flex justify-between items-center w-full max-w-4xl">
 
-        <button class="bg-violet-500 p-5 rounded-full transition hover:bg-violet-500/70 hover:shadow-md cursor-pointer">
-          <img src="./assets/play-button.png" alt="Play" class="w-6 h-6">
-        </button>
+          <button id="startBtn" class="font-bold bg-violet-500 px-4 py-5 rounded-full text-md transition hover:bg-violet-500/70 hover:shadow-md cursor-pointer">
+            Start
+          </button>
 
-        <button class="bg-violet-500 p-5 rounded-full transition hover:bg-violet-500/70 hover:shadow-md cursor-pointer">
-          <img src="./assets/restart.png" alt="Restart" class="w-6 h-6">
-        </button>
+          <button id="playBtn" class="font-bold bg-violet-500 p-5 rounded-full transition hover:bg-violet-500/70 hover:shadow-md cursor-pointer">
+            Resume/Pause
+          </button>
+
+          <button id="resetBtn" class="bg-violet-500 p-5 rounded-full transition hover:bg-violet-500/70 hover:shadow-md cursor-pointer">
+            <img src="./assets/refresh.png" alt="Restart" class="w-6 h-6">
+          </button>
+
+        </div>
+      </section>
+
       </div>
-    </section>
-      </div>
-
-
 
     <!-- to-do-list -->
     <div class="flex flex-col gap-10 border border-gray-700 rounded-xl p-4 shadow-[0_0_10px_2px_rgba(255,255,255,0.1)]">
@@ -61,6 +62,7 @@
     </div>
 
     </main>
+
   <!-- Footer -->
   <footer class="bg-gray-900 border-t-2 border-gray-800 mt-20">
     <section class="flex items-start justify-between ap-8 max-w-6xl mx-auto px-6 py-10 ">
@@ -86,6 +88,6 @@
     </div>
 
   </footer>
-    <script src="../index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
