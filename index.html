@@ -10,11 +10,11 @@
 </head>
 <body>
   <!-- NavBar remove: sticky fixed top-0 left-0 w-full z-50-->
-  <header class="px-[15%] py-6 border-b-2 border-gray-800 text-white">
+  <header class="px-[18%] lg:px-[15%] overflow-x-hidden py-6 border-b-2 border-gray-800 text-white">
     <nav class="flex justify-between items-center">
 
     <section>
-      <figure class="font-black text-4xl text-violet-400">
+      <figure class="font-black text-2xl lg:text-4xl text-violet-400">
         <a href="index.html">UrTime</a>
       </figure>
     </section>
@@ -32,25 +32,25 @@
   </header>
 
   <!-- Hero -->
-  <main class="flex items-center justify-center min-h-screen text-white mr-10">
+  <main class="flex items-center justify-center min-h-screen text-white mr-10 px-5 lg:px-10">
 
     <div class="flex items-center justify-between gap-16 max-w-6xl w-full">
       <section class="text-left flex-1">
-        <p class="text-8xl font-black mb-2 transtion-transform duration-400 ease-in-out cursor-pointer hover:text-yellow-400">
+        <p class="text-5xl lg:text-8xl font-black mb-2 transtion-transform duration-400 ease-in-out cursor-pointer hover:text-yellow-400">
           UrTime
         </p>
           <section class="flex gap-3">
-            <p class="text-4xl font-semibold mb-2 transtion duration-200 ease-in-out hover:text-violet-400">
+            <p class="text-2xl lg:text-4xl font-semibold mb-2 transtion duration-200 ease-in-out hover:text-violet-400">
               Focus.
             </p>
-            <p class="text-4xl font-semibold mb-2 transtion duration-200 ease-in-out hover:text-yellow-400">
+            <p class="text-2xl lg:text-4xl font-semibold mb-2 transtion duration-200 ease-in-out hover:text-yellow-400">
               Plan.
             </p>
-            <p class="text-4xl font-semibold mb-2 transtion duration-200 ease-in-out hover:text-violet-400">
+            <p class="text-2xl lg:text-4xl font-semibold mb-2 transtion duration-200 ease-in-out hover:text-violet-400">
               Achieve.
             </p>
           </section>
-        <p class="text-md mb-6 text-gray-300">
+        <p class="text-sm lg:text-md mb-6 text-gray-300">
           A Free Pomodoro Timer and To-Do List
         </p>
         <button class="bg-purple-500 hover:bg-yellow-500 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition-colors duration-300 cursor-pointer "
@@ -59,14 +59,14 @@
         </button>
       </section>
 
-      <main class="relative flex-1">
+      <main class="hidden sm:hidden md:block lg:block relative flex-1 md:mr-30">
 
       <figure class="flex-1 flex justify-end">
-        <img src="./assets/sticky.webp" alt="orasan" class="w-[600px] max-w-full relative z-10">
+        <img src="./assets/sticky.webp" alt="orasan" class="md:w-[300px] lg:w-[600px] max-w-full relative z-10">
       </figure>
       
       <figure class="flex-1 flex justify-end">
-        <img src="./assets/clock.png" alt="orasan" class="w-[600px] max-w-full absolute top-10 left-50 z-20 rounded-lg">
+        <img src="./assets/clock.png" alt="orasan" class="md:w-[300px] lg:w-[600px] max-w-full absolute top-10 left-50 z-20 rounded-lg">
       </figure>
 
       </main>
