@@ -27,10 +27,10 @@
     </header>
 
     <!-- pomodoro & todo-->
-    <main class="flex justify-start min-h-[70vh] mt-30 text-white px-[15%] py-[5%] gap-35 ml-8">
+    <main class="flex flex-col lg:flex-row justify-start min-h-[70vh] mt-10 text-white px-[15%] py-[5%] gap-35 ml-8 w-auto lg:w-auto">
 
-      <div class="flex flex-col gap-10 border border-gray-700 rounded-xl p-15 shadow-[0_0_10px_2px_rgba(255,255,255,0.1)]">
-        <div id="Ring" class="flex items-center justify-center min-h-[40vh] min-w-[40vh] ring-5 ring-violet-600 ring-opacity-70 rounded-full 
+      <div class="flex flex-col gap-10 border border-gray-700 rounded-xl p-10 lg:p-15 shadow-[0_0_10px_2px_rgba(255,255,255,0.1)]">
+        <div id="Ring" class="flex items-center justify-center min-h-[20vh] lg:min-h-[40vh] lg:min-w-[40vh] ring-5 ring-violet-600 ring-opacity-70 rounded-full 
         transition-all duration-300 ease-in-out shadow-[0_0_15px_5px_rgba(0,0,0,0.1)] shadow-violet-700/80 hover:ring-violet-800">
                     <div class="flex items-center justify-center space-x-1">
                     <p class="text-7xl font-bold"></p>
@@ -39,18 +39,18 @@
                     </div>
         </div>
 
-      <section class="flex justify-center gap-10 p-6 w-100 mt-4">
-        <div class="flex justify-between items-center w-full max-w-4xl">
+      <section class="flex justify-center gap-10 p-6 w-full mt-4 ">
+        <div class="flex flex-wrap justify-center md:justify-evenly lg:justify-between items-center w-full max-w-4xl">
 
-          <button id="startBtn" class="font-bold bg-violet-500 px-4 py-5 rounded-full text-md transition hover:bg-purple-500 hover:shadow-md cursor-pointer">
+          <button id="startBtn" class="font-bold bg-violet-500 px-4 py-5 rounded-full text-sm lg:text-md transition hover:bg-purple-500 hover:shadow-md cursor-pointer mb-2 mr-1">
             Start
           </button>
 
-          <button id="playBtn" class="font-bold bg-violet-500 p-5 rounded-full transition hover:bg-purple-500 hover:shadow-md cursor-pointer">
+          <button id="playBtn" class="font-bold bg-violet-500 p-5 rounded-full text-sm lg:text-md transition hover:bg-purple-500 hover:shadow-md cursor-pointer mb-2 mr-1">
             Resume/Pause
           </button>
 
-          <button id="resetBtn" class="bg-violet-500 p-5 rounded-full transition hover:bg-purple-500  hover:shadow-md cursor-pointer">
+          <button id="resetBtn" class="bg-violet-500 p-5 rounded-full transition hover:bg-purple-500 hover:shadow-md cursor-pointer mb-2">
             <img src="./assets/refresh.png" alt="Restart" class="w-6 h-6">
           </button>
 
@@ -60,9 +60,9 @@
       </div>
 
     <!-- to-do-list -->
-    <div class="flex flex-col gap-10 border border-gray-700 rounded-xl p-4 shadow-[0_0_10px_2px_rgba(255,255,255,0.1)]">
+    <div class="flex flex-col gap-10 border border-gray-700 rounded-xl p-4 shadow-[0_0_10px_2px_rgba(255,255,255,0.1)] w-full lg:w-auto">
 
-      <main class="flex flex-col justify-center min-h-[64vh] min-w-[60vh] text-white px-[15%] py-[5%] gap-10">
+      <main class="flex flex-col justify-center lg:min-h-[64vh] lg:min-w-[60vh] text-white px-[15%] py-[5%] gap-10">
             <div class="flex items-center gap-3 mb-2">
                 <input id="userInput" type="text" placeholder="Add ur task..." class="flex-grow w-full bg-gray-800 border border-gray-700 
                 rounded-lg p-3 outline-none focus:border-violet-600 focus:ring-2 focus:ring-violet-500">
@@ -84,7 +84,7 @@
 
   <!-- Footer -->
   <footer class="bg-gray-900 border-t-2 border-gray-800 mt-20">
-    <section class="flex items-start justify-between ap-8 max-w-6xl mx-auto px-6 py-10 ">
+    <section class="flex flex-col sm:flex-row items-start justify-between gap-8 max-w-6xl mx-auto px-6 py-10 ">
 
       <div class="flex flex-col gap-2">
         <p class="text-3xl font-black text-violet-400 transtion-transform duration-400 ease-in-out cursor-pointer hover:text-yellow-400">
