@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (taskText === '') return
 
     const listItem = document.createElement('li')
-    listItem.className = 'flex items-center justify-around gap-4 p-3 rounded-lg hover:bg-white/10'
+    listItem.className = 'grid grid-cols-3 items-center gap-4 p-3 rounded-lg hover:bg-white/10'
     
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const textSpan = document.createElement('span')
     textSpan.textContent = taskText
+    textSpan.className = 'whitespace-normal break-words'
 
     listItem.appendChild(checkbox)
     listItem.appendChild(textSpan)
